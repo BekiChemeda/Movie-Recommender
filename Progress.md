@@ -61,7 +61,7 @@ A combination of both Collaborative Filtering and Content-Based Filtering.
 
 ---
 
-# Day 2 – [Date]
+# Day 2 – November 21, 2025
 
 ## What I Learned
 
@@ -92,9 +92,12 @@ But as you notice, with more than 3 words, it becomes impossible to draw.
 
 So we use the general **cosine similarity formula**:
 
-\[
-\text{Cosine Similarity} = \frac{\sum_i A_i B_i}{\sqrt{\sum_i A_i^2} \cdot \sqrt{\sum_i B_i^2}}
-\]
+Cosine similarity = (Σ_i A_i B_i) / (√(Σ_i A_i^2) · √(Σ_i B_i^2))
+
+Where:
+- Σ_i A_i B_i = sum over i of A_i times B_i (dot product)
+- √(Σ_i A_i^2) = magnitude of A
+- √(Σ_i B_i^2) = magnitude of B
 
 Where:  
 - \(A_i\) and \(B_i\) are the word counts (or features) of the two vectors.  
