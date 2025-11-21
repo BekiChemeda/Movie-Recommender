@@ -61,85 +61,57 @@ A combination of both Collaborative Filtering and Content-Based Filtering.
 
 ---
 
-# Day 2  
-## What I Learned Today
+# Day 2 – [Date]
 
-Yesterday I tried to talk about cosine similarity without really mentioning the formula behind it. So today I focused on understanding cosine similarity deeply.  
-I watched videos from **StatQuest** and **Data Mentor**, and both of them helped me understand the core idea much better.
+## What I Learned
 
-Let me explain it in a simple way.
+Yesterday I tried to explain cosine similarity without mentioning its formula. On my second day, I learned about cosine similarity **in depth**. I used videos from **StatQuest** and **Data Mentor**, which really helped me understand the concept clearly.  
 
-### Understanding Cosine Similarity (My Own Words)
+Lemme explain it a little:
 
-Imagine we want to find how similar **“Good Morning”** and **“Good”** are.
+Let's say we are finding the similarity between **"Good Morning"** and **"Good"**.  
 
-First, let's count how many times each word appears:
+First, let's count each word in both phrases:
 
-| Word     | Good Morning | Good |
-|----------|--------------|------|
-| Good     | 1            | 1    |
-| Morning  | 1            | 0    |
+| No | Good Morning | Good |
+|----|--------------|------|
+| Good | 1 | 1 |
+| Morning | 1 | 0 |
 
-Now, think of each unique word as a dimension:
-- X-axis → “Morning”  
-- Y-axis → “Good”
+After counting how many times each word appears, we can visualize it:  
+- Let **X-axis = Morning**, **Y-axis = Good**  
+- Plot a dot based on the table data, starting from (0,0)  
+- Draw a line to each point: Good (1,1) and Morning (1,0)  
 
-Then we plot the points:
-- “Good Morning” → (Morning=1, Good=1) → **A = [1, 1]**
-- “Good” → (Morning=0, Good=1) → **B = [0, 1]**
+The angle between these two lines is **45°**, and **cos(45°) = 0.71**, which is the similarity between them.  
 
-Draw lines from the origin (0,0) to each point.  
-These two lines form an angle of **45 degrees** between them.  
-Cosine similarity = cos(45°) = 0.71 (approximately).
+- If we compare **Good Morning vs Good Morning**, the angle = 0 → similarity = 1  
+- If we compare **Good Morning vs Eating Lunch**, the angle = 90° → similarity = 0  
 
----
+But as you notice, with more than 3 words, it becomes impossible to draw.  
 
-### Using the Cosine Similarity Formula
+So we use the general **cosine similarity formula**:
 
-The formula is:
-```
 \[
-\text{cosine similarity} = \frac{A \cdot B}{\|A\| \times \|B\|}
+\text{Cosine Similarity} = \frac{\sum_i A_i B_i}{\sqrt{\sum_i A_i^2} \cdot \sqrt{\sum_i B_i^2}}
 \]
 
 Where:  
-- \(A \cdot B\) = dot product of vectors A and B  
-- \(\|A\|\) = magnitude of vector A  
-- \(\|B\|\) = magnitude of vector B  
+- \(A_i\) and \(B_i\) are the word counts (or features) of the two vectors.  
 
-**Step 1: Compute the dot product**
+**Example with "Good Morning" and "Good":**
+
+- \(A = [1, 1]\) (Good Morning)  
+- \(B = [1, 0]\) (Good)  
 
 \[
-A \cdot B = (1 \times 0) + (1 \times 1) = 0 + 1 = 1
+\text{Cosine Similarity} = \frac{(1*1) + (1*0)}{\sqrt{1^2 + 1^2} \cdot \sqrt{1^2 + 0^2}} = \frac{1}{\sqrt{2} \cdot 1} \approx 0.71
 \]
-
-**Step 2: Compute the magnitudes**
-
-\[
-\|A\| = \sqrt{1^2 + 1^2} = \sqrt{2} \approx 1.414
-\]  
-\[
-\|B\| = \sqrt{0^2 + 1^2} = \sqrt{1} = 1
-\]
-
-**Step 3: Compute cosine similarity**
-
-\[
-\text{cosine similarity} = \frac{1}{1.414 \times 1} \approx 0.707 \approx 0.71
-\]
-```
-✅ The formula confirms the same result as our geometric intuition.
 
 ---
 
-## What’s Next?
-
-Now that I understand cosine similarity properly, my plan is:
-
-1. **Choose the dataset** I will use for my recommender system.  
-2. **Explore the dataset** before starting any coding.  
-3. After that, **implement cosine similarity using Python**.
-
-That will be my focus for Day 3.
+Now that I understand the basic formula, tomorrow I will try to **implement it in Python**.  
+But before that, I will **choose a dataset** and explore it before starting to play with cosine similarity.
 
 ---
+
