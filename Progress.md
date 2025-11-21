@@ -107,9 +107,7 @@ Where:
 - \(A = [1, 1]\) (Good Morning)  
 - \(B = [1, 0]\) (Good)  
 
-\[
-\text{Cosine Similarity} = \frac{(1*1) + (1*0)}{\sqrt{1^2 + 1^2} \cdot \sqrt{1^2 + 0^2}} = \frac{1}{\sqrt{2} \cdot 1} \approx 0.71
-\]
+Cosine similarity = ((1 * 1) + (1 * 0)) / (sqrt(1^2 + 1^2) * sqrt(1^2 + 0^2)) = 1 / (sqrt(2) * 1) ≈ 0.707 ≈ 0.71
 
 ---
 
