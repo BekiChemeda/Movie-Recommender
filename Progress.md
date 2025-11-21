@@ -56,3 +56,90 @@ A combination of both Collaborative Filtering and Content-Based Filtering.
   - Cosine similarity  
   - Weighted average  
   - Correlation  
+
+
+
+---
+
+# Day 2  
+## What I Learned Today
+
+Yesterday I tried to talk about cosine similarity without really mentioning the formula behind it. So today I focused on understanding cosine similarity deeply.  
+I watched videos from **StatQuest** and **Data Mentor**, and both of them helped me understand the core idea much better.
+
+Let me explain it in a simple way.
+
+### Understanding Cosine Similarity (My Own Words)
+
+Imagine we want to find how similar **“Good Morning”** and **“Good”** are.
+
+First, let's count how many times each word appears:
+
+| Word     | Good Morning | Good |
+|----------|--------------|------|
+| Good     | 1            | 1    |
+| Morning  | 1            | 0    |
+
+Now, think of each unique word as a dimension:
+- X-axis → “Morning”  
+- Y-axis → “Good”
+
+Then we plot the points:
+- “Good Morning” → (Morning=1, Good=1) → **A = [1, 1]**
+- “Good” → (Morning=0, Good=1) → **B = [0, 1]**
+
+Draw lines from the origin (0,0) to each point.  
+These two lines form an angle of **45 degrees** between them.  
+Cosine similarity = cos(45°) = 0.71 (approximately).
+
+---
+
+### Using the Cosine Similarity Formula
+
+The formula is:
+
+\[
+\text{cosine similarity} = \frac{A \cdot B}{\|A\| \times \|B\|}
+\]
+
+Where:  
+- \(A \cdot B\) = dot product of vectors A and B  
+- \(\|A\|\) = magnitude of vector A  
+- \(\|B\|\) = magnitude of vector B  
+
+**Step 1: Compute the dot product**
+
+\[
+A \cdot B = (1 \times 0) + (1 \times 1) = 0 + 1 = 1
+\]
+
+**Step 2: Compute the magnitudes**
+
+\[
+\|A\| = \sqrt{1^2 + 1^2} = \sqrt{2} \approx 1.414
+\]  
+\[
+\|B\| = \sqrt{0^2 + 1^2} = \sqrt{1} = 1
+\]
+
+**Step 3: Compute cosine similarity**
+
+\[
+\text{cosine similarity} = \frac{1}{1.414 \times 1} \approx 0.707 \approx 0.71
+\]
+
+✅ The formula confirms the same result as our geometric intuition.
+
+---
+
+## What’s Next?
+
+Now that I understand cosine similarity properly, my plan is:
+
+1. **Choose the dataset** I will use for my recommender system.  
+2. **Explore the dataset** before starting any coding.  
+3. After that, **implement cosine similarity using Python**.
+
+That will be my focus for Day 3.
+
+---
