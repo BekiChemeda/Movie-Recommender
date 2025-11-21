@@ -97,7 +97,7 @@ Cosine similarity = cos(45°) = 0.71 (approximately).
 ### Using the Cosine Similarity Formula
 
 The formula is:
-
+```
 \[
 \text{cosine similarity} = \frac{A \cdot B}{\|A\| \times \|B\|}
 \]
@@ -127,7 +127,7 @@ A \cdot B = (1 \times 0) + (1 \times 1) = 0 + 1 = 1
 \[
 \text{cosine similarity} = \frac{1}{1.414 \times 1} \approx 0.707 \approx 0.71
 \]
-
+```
 ✅ The formula confirms the same result as our geometric intuition.
 
 ---
