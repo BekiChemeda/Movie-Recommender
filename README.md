@@ -1,3 +1,43 @@
 # Movie-Recommender
+
 A movie recommender ML project with different approaches.
-This repo contains different types Recommender systems I created while practicing. If you are also practicing you can use the road map I used to practice tho that tho journey will be smoother for you.
+
+This repo contains several recommender systems I built while practicing. If you're practicing too, you can follow the roadmap I used — it should make the journey smoother for you.
+
+Feel free to contribute to this repo to make it broader, or open an issue with detailed information if you find something that's wrong or could be improved.
+
+## What's inside
+- Multiple recommender implementations (collaborative filtering, content-based, hybrid, etc.)
+- Notebooks and scripts for data processing, training, and evaluation
+- Example datasets or instructions to download them
+- A simple roadmap to guide practice and learning
+
+## Roadmap (how I practiced)
+1. Explore dataset(s) and clean data
+2. Build a baseline (e.g., popularity-based or simple averages)
+3. Implement collaborative filtering (user/item-based)
+4. Implement content-based filtering
+5. Experiment with hybrid approaches
+6. Evaluate using appropriate metrics (RMSE, precision@k, recall@k, MAP, etc.)
+7. Optimize and iterate
+
+Use this as a guide — adapt it to your data, goals, and interests.
+
+## Quick start
+1. Clone the repo
+2. Install requirements (see `requirements.txt` or the notebook)
+3. Download or point to your dataset
+4. Run the notebooks or scripts in the order in the roadmap
+
+## Contributing
+Contributions are welcome! If you want to:
+- Add a new approach or improvement, open a PR
+- Suggest a change or report a bug, open an Issue and include steps to reproduce and any relevant data/notebook output
+- Improve docs or add examples, PRs are appreciated
+
+## Issues
+If something looks off, please open an Issue and provide as much detail as you can — expected vs actual behavior, dataset used, and code/notebook references help a lot.
+
+---
+
+Thanks for checking out Movie-Recommender — happy experimenting and learning!
