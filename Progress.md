@@ -65,7 +65,7 @@ A combination of both Collaborative Filtering and Content-Based Filtering.
 
 ## What I Learned
 
-Yesterday I tried to explain cosine similarity without mentioning its formula. On my second day, I learned about cosine similarity **in depth**. I used videos from **StatQuest** and **Data Mentor**, which really helped me understand the concept clearly.  
+Today I tried to explain cosine similarity without mentioning its formula. On my second day, I learned about cosine similarity **in depth**. I used videos from **StatQuest** and **Data Mentor**, which really helped me understand the concept clearly.  
 
 Lemme explain it a little:
 
@@ -116,3 +116,13 @@ But before that, I will **choose a dataset** and explore it before starting to p
 
 ---
 
+# Day 3 - November 23, 2025
+## What I learned
+
+For the past days I have been exploring different datasets for building my movie recommender system. I finally settled on the **MovieLens 100K dataset** because it is well-structured and widely used in recommender system research and more than that it wasn't this much huge to be computed. I tried the large datasets like 1M and above and they were too large when we try to change them into a user-item matrix. 
+
+After Downloading the dataset, I explored it a bit to make myself familiar with its structure. Then I started implementing cosine similarity in Python using NumPy. I created two sample vectors and calculated the cosine similarity between them using the formula I learned earlier. Actually I didn't use the formula directly, instead I used NumPy's built-in functions to compute the dot product and magnitudes, which made the implementation easier and more efficient. I didn't use the formula directly, doesn't mean knowing the formula is not important, actually it is very important to understand the concept behind it. 
+
+So Yesterday I tried to implement collaborative filtering using cosine similarity in two ways: user based Collaborative Filtering and item(movie) based collaborative Filtering. 
+
+Just to explain; the user-based collaborative filtering recommends movies to a user based on the preferences of similar users. For example, if User A and User B have similar tastes, and User A liked Movie X, then Movie X can be recommended to User B. While item-based collaborative filtering recommends movies similar to those a user has liked in the past. For example, if a user liked Movie Y, and Movie Z is similar to Movie Y, then Movie Z can be recommended to that user.
