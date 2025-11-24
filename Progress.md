@@ -119,7 +119,7 @@ But before that, I will **choose a dataset** and explore it before starting to p
 # Day 3 - November 23, 2025
 ## What I learned
 
-For the past days I have been exploring different datasets for building my movie recommender system. I finally settled on the **MovieLens 100K dataset** because it is well-structured and widely used in recommender system research and more than that it wasn't this much huge to be computed. I tried the large datasets like 1M and above and they were too large when we try to change them into a user-item matrix. 
+For the past days I have been exploring different datasets for building my movie recommender system. I finally settled on the [**MovieLens 100K dataset**](https://www.kaggle.com/datasets/chauanhdat/movielens-latest-small-for-education) because it is well-structured and widely used in recommender system research and more than that it wasn't this much huge to be computed. I tried the large datasets like 1M and above and they were too large when we try to change them into a user-item matrix. 
 
 After Downloading the dataset, I explored it a bit to make myself familiar with its structure. Then I started implementing cosine similarity in Python using NumPy. I created two sample vectors and calculated the cosine similarity between them using the formula I learned earlier. Actually I didn't use the formula directly, instead I used NumPy's built-in functions to compute the dot product and magnitudes, which made the implementation easier and more efficient. I didn't use the formula directly, doesn't mean knowing the formula is not important, actually it is very important to understand the concept behind it. 
 
@@ -128,5 +128,7 @@ So Yesterday I tried to implement collaborative filtering using cosine similarit
 Just to explain; the user-based collaborative filtering recommends movies to a user based on the preferences of similar users. For example, if User A and User B have similar tastes, and User A liked Movie X, then Movie X can be recommended to User B. While item-based collaborative filtering recommends movies similar to those a user has liked in the past. For example, if a user liked Movie Y, and Movie Z is similar to Movie Y, then Movie Z can be recommended to that user.
 
 The link for both implementations  can be found below.
-- [For Item based](https://github.com/BekiChemeda/Movie-Recommender/blob/main/Collaborative%20Filtering/Cosine%20Similarity/cosine-similarity-Item-based-recommender-sy.ipynb)
+- [For Item based](https://github.com/BekiChemeda/Movie-Recommender/blob/main/Collaborative-Filtering/Cosine-Similarity/cosine-similarity-Item-based-recommender-sy.ipynb)
 -  [For User based ](https://github.com/bekichemeda/Movie-recommender/Cosine-Filtering/Cosine-Similarity.ipynb)
+
+So next Day I will try to find another proper dataset and implement population based recommendation System. I have watched some videos how to implement it and I hope it won't be difficult. 
