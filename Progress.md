@@ -126,3 +126,7 @@ After Downloading the dataset, I explored it a bit to make myself familiar with 
 So Yesterday I tried to implement collaborative filtering using cosine similarity in two ways: user based Collaborative Filtering and item(movie) based collaborative Filtering. 
 
 Just to explain; the user-based collaborative filtering recommends movies to a user based on the preferences of similar users. For example, if User A and User B have similar tastes, and User A liked Movie X, then Movie X can be recommended to User B. While item-based collaborative filtering recommends movies similar to those a user has liked in the past. For example, if a user liked Movie Y, and Movie Z is similar to Movie Y, then Movie Z can be recommended to that user.
+
+The link for both implementations  can be found below.
+- [For Item based](https://github.com/BekiChemeda/Movie-Recommender/blob/main/Collaborative%20Filtering/Cosine%20Similarity/cosine-similarity-Item-based-recommender-sy.ipynb)
+-  [For User based ](https://github.com/bekichemeda/Movie-recommender/Cosine-Filtering/Cosine-Similarity.ipynb)
