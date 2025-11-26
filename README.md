@@ -1,6 +1,9 @@
 # Movie-Recommender
-## Files 
-
+## File Structure
+### Collaborative Filtering
+    - Cosine Similarity Based
+      - User-Based
+      - Item-Based
 A movie recommender ML project with different approaches.
 
 This repo contains several recommender systems I built while practicing. If you're practicing too, you can follow the roadmap I used — it should make the journey smoother for you.
