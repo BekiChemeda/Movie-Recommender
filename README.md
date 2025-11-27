@@ -1,12 +1,14 @@
 # Movie-Recommender
 ## File Structure
 ### Collaborative Filtering
+
     - Cosine Similarity Based
       - [User-Based](https://github.com/bekichemeda/Movie-recommender/Cosine-Filtering/cosine-similarity-User-based-recommender-sy.ipynb)
       - [Item-Based](https://github.com/BekiChemeda/Movie-Recommender/blob/main/Collaborative-Filtering/Cosine-Similarity/cosine-similarity-Item-based-recommender-sy.ipynb)
+
 A movie recommender ML project with different approaches.
 
-This repo contains several recommender systems I built while practicing. If you're practicing too, you can follow the roadmap I used — it should make the journey smoother for you.
+This repo contains several recommender systems I built while practicing. If you're practicing too, you can follow the roadmap I used — it should make the journey smoother for you. The files are organized to help you understand different recommender system techniques and can be accessed easily for learning or reference. look through the notebooks and scripts to see how each method is implemented.
 
 Feel free to contribute to this repo to make it broader, or open an issue with detailed information if you find something that's wrong or could be improved.
 
