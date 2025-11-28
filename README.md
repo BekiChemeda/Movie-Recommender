@@ -1,12 +1,36 @@
 # Movie-Recommender
-## File Structure
-### Collaborative Filtering
-
-    - Cosine Similarity Based
-      - [User-Based](https://github.com/bekichemeda/Movie-recommender/Cosine-Filtering/cosine-similarity-User-based-recommender-sy.ipynb)
-      - [Item-Based](https://github.com/BekiChemeda/Movie-Recommender/blob/main/Collaborative-Filtering/Cosine-Similarity/cosine-similarity-Item-based-recommender-sy.ipynb)
 
 A movie recommender ML project with different approaches.
+
+## What Can This Project Do?
+
+This project provides movie recommendation capabilities using machine learning techniques:
+
+- **Recommend movies based on user similarity** — Find users with similar tastes and suggest movies they liked that you haven't seen yet (User-Based Collaborative Filtering)
+- **Recommend movies based on movie similarity** — Find movies similar to ones you've already enjoyed (Item-Based Collaborative Filtering)
+- **Calculate similarity scores** — Compute cosine similarity between users or movies to measure taste/content similarity
+- **Serve as a learning resource** — Follow along with documented notebooks to understand how recommender systems work
+
+### Currently Implemented
+
+| Technique | Description | Notebook |
+|-----------|-------------|----------|
+| User-Based Collaborative Filtering | Recommends movies based on similar users' preferences | [View Notebook](Collaborative-Filtering/Cosine-Similarity/cosine-similarity-user-based-recommender-sys.ipynb) |
+| Item-Based Collaborative Filtering | Recommends movies similar to ones you've liked | [View Notebook](Collaborative-Filtering/Cosine-Similarity/cosine-similarity-Item-based-recommender-sy.ipynb) |
+
+### Planned Features
+
+- Content-Based Filtering (based on movie genres, descriptions, tags)
+- Hybrid approaches (combining multiple methods)
+- Popularity-based recommendations
+
+## File Structure
+
+### Collaborative Filtering
+
+- Cosine Similarity Based
+  - [User-Based](Collaborative-Filtering/Cosine-Similarity/cosine-similarity-user-based-recommender-sys.ipynb)
+  - [Item-Based](Collaborative-Filtering/Cosine-Similarity/cosine-similarity-Item-based-recommender-sy.ipynb)
 
 This repo contains several recommender systems I built while practicing. If you're practicing too, you can follow the roadmap I used — it should make the journey smoother for you. The files are organized to help you understand different recommender system techniques and can be accessed easily for learning or reference. look through the notebooks and scripts to see how each method is implemented.
 
