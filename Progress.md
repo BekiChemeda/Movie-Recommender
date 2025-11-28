@@ -116,7 +116,7 @@ But before that, I will **choose a dataset** and explore it before starting to p
 
 ---
 
-# Day 3 - November 23, 2025
+# Day 3
 ## What I learned
 
 For the past days I have been exploring different datasets for building my movie recommender system. I finally settled on the [**MovieLens 100K dataset**](https://www.kaggle.com/datasets/chauanhdat/movielens-latest-small-for-education) because it is well-structured and widely used in recommender system research and more than that it wasn't this much huge to be computed. I tried the large datasets like 1M and above and they were too large when we try to change them into a user-item matrix. 
