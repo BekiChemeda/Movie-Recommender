@@ -1,6 +1,6 @@
 # Movie-Recommender
 ## File Structure
-### Collaborative Filtering
+## Collaborative Filtering
 
     - Cosine Similarity Based
       - [User-Based](https://github.com/bekichemeda/Movie-recommender/Cosine-Filtering/cosine-similarity-User-based-recommender-sy.ipynb)
