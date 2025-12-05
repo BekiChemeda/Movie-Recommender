@@ -7,7 +7,7 @@
 
 A movie recommender ML project with different approaches.
 
-This repo contains several recommender systems I built while practicing. If you're practicing too, you can follow the roadmap I used — it should make the journey smoother for you. The files are organized to help you understand different recommender system techniques and can be accessed easily for learning or reference. look through the notebooks and scripts to see how each method is implemented.
+This repo contains several recommender systems I built while practicing. If you're practicing too, you can follow [the roadmap I used](https://github.com/BekiChemeda/Movie-Recommender/blob/main/Progress.md) it should make the journey smoother for you. The files are organized to help you understand different recommender system techniques and can be accessed easily for learning or reference. look through the notebooks and scripts to see how each method is implemented.
 
 Feel free to contribute to this repo to make it broader, or open an issue with detailed information if you find something that's wrong or could be improved.
 
@@ -17,16 +17,15 @@ Feel free to contribute to this repo to make it broader, or open an issue with d
 - Example datasets or instructions to download them
 - A simple roadmap to guide practice and learning
 
-## Roadmap (how I practiced)
-1. Explore dataset(s) and clean data
-2. Build a baseline (e.g., popularity-based or simple averages)
-3. Implement collaborative filtering (user/item-based)
-4. Implement content-based filtering
-5. Experiment with hybrid approaches
-6. Evaluate using appropriate metrics (RMSE, precision@k, recall@k, MAP, etc.)
-7. Optimize and iterate
+## Roadmap (how I practiced each topic)
+1. First select one topic or category at a time (example, Cosine similarity from Content based recommendation systems)
+2. Learn about the topic in detail including the math concept behind it and how you can implement it (You can watch different videos on YouTube to broaden your understanding in that area. some YouTube channels I recommend: 3Brown1Blue, Khan Academy, Aleason Person)
+3. Explore dataset(s) and clean data
+4. Build a baseline (e.g., popularity-based or simple averages)
+4. Implementation
+5. Evaluation and checking again 
 
-Use this as a guide — adapt it to your data, goals, and interests.
+Use this as a guide to learn any ML algorithm. Adapt it to your data, goals, and interests.
 
 ## Quick start
 1. Clone the repo
